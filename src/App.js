@@ -77,8 +77,7 @@ class App extends Component {
     this.setState(({ page }) => ({ page: page + 1 }), this.getImages);
   };
 
-  openModal = (e) => {
-    const id = e.target.dataset.imageid;
+  openModal = (id) => {
     this.setState({
       showModal: true,
       activeImageId: id,
